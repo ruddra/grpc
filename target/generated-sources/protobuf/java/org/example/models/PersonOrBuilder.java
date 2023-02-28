@@ -20,46 +20,55 @@ public interface PersonOrBuilder extends
       getNameBytes();
 
   /**
-   * <code>int32 age = 2;</code>
+   * <code>.google.protobuf.Int32Value age = 2;</code>
+   * @return Whether the age field is set.
+   */
+  boolean hasAge();
+  /**
+   * <code>.google.protobuf.Int32Value age = 2;</code>
    * @return The age.
    */
-  int getAge();
+  com.google.protobuf.Int32Value getAge();
+  /**
+   * <code>.google.protobuf.Int32Value age = 2;</code>
+   */
+  com.google.protobuf.Int32ValueOrBuilder getAgeOrBuilder();
 
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return Whether the address field is set.
    */
   boolean hasAddress();
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return The address.
    */
   org.example.models.Address getAddress();
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    */
   org.example.models.AddressOrBuilder getAddressOrBuilder();
 
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   java.util.List<org.example.models.Car> 
       getCarList();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   org.example.models.Car getCar(int index);
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   int getCarCount();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   java.util.List<? extends org.example.models.CarOrBuilder> 
       getCarOrBuilderList();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   org.example.models.CarOrBuilder getCarOrBuilder(
       int index);

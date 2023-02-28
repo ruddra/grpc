@@ -1,5 +1,6 @@
 package org.example.protobuf;
 
+import com.google.protobuf.Int32Value;
 import org.example.models.Address;
 import org.example.models.Car;
 import org.example.models.Person;
@@ -32,7 +33,7 @@ public class CompositionDemo {
 
         Person buti = Person.newBuilder()
                 .setName("Buti")
-                .setAge(4)
+                .setAge(Int32Value.newBuilder().setValue(4).build())
                 .setAddress(address)
                 .addAllCar(cars)
                 .build();

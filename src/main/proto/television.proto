@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example.models";
+
+message Television {
+  string brand  = 1;
+//  int32 year = 2;
+  reserved 2;
+  reserved "year";
+  Type type = 3;
+}
+
+enum Type {
+  HD = 0;
+  UHD = 1;
+  OLED = 2;
+}

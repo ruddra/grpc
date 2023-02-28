@@ -1,5 +1,6 @@
 package org.example.protobuf;
 
+import com.google.protobuf.Int32Value;
 import org.example.models.Person;
 
 import java.io.File;
@@ -13,11 +14,11 @@ public class PersonDemo {
     public static void main(String[] args) throws IOException {
         Person buti = Person.newBuilder()
                 .setName("Buti")
-                .setAge(4)
+                .setAge(Int32Value.newBuilder().setValue(4).build())
                 .build();
         Person buti2 = Person.newBuilder()
                 .setName("Buti")
-                .setAge(4)
+                .setAge(Int32Value.newBuilder().setValue(4).build())
                 .build();
         System.out.println(
                 buti.equals(buti2)
